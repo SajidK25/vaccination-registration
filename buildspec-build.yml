@@ -4,11 +4,12 @@ env:
   shell: "/bin/sh"
   variables:
     IMAGE_TAG: registration-service
-  parameter-store:
-    # ECR_REGISTRY_URI: ecr-registry-uri ap-southeast-1
-    # AWS_DEFAULT_REGION: default-region-aws 640606204110.dkr.ecr.ap-southeast-1.amazonaws.com/vaccination-vms-images
-      ECR_REGISTRY_URI: ap-southeast-1
-      AWS_DEFAULT_REGION: 640606204110.dkr.ecr.ap-southeast-1.amazonaws.com/vaccination-vms-images
+    ECR_REGISTRY_URI: ap-southeast-1
+    AWS_DEFAULT_REGION: 640606204110.dkr.ecr.ap-southeast-1.amazonaws.com/vaccination-vms-images
+  # parameter-store:
+    # ECR_REGISTRY_URI: ecr-registry-uri
+    # AWS_DEFAULT_REGION: default-region-aws
+      
 
 phases:
   install:
