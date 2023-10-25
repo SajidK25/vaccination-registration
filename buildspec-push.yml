@@ -5,8 +5,10 @@ env:
   variables:
     IMAGE_TAG: registration-service
   parameter-store:
-    ECR_REGISTRY_URI: ecr-registry-uri
-    AWS_DEFAULT_REGION: default-region-aws
+    # ECR_REGISTRY_URI: ecr-registry-uri
+    # AWS_DEFAULT_REGION: default-region-aws
+      ECR_REGISTRY_URI: ap-southeast-1
+      AWS_DEFAULT_REGION: 640606204110.dkr.ecr.ap-southeast-1.amazonaws.com/vaccination-vms-images
     
 phases:
   install:
